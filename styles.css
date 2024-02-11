@@ -42,7 +42,7 @@ body {
 
 .links a {
     display: block;
-    font-size: bold;
+    font-weight: bold;
     width: 100%;
     padding: 15px;
     margin-bottom: 10px;
@@ -58,6 +58,17 @@ body {
     transform: scale(1.05); /* Aumenta o tamanho do link em 5% */
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 }
+
+.aviso {
+    margin-top: 20px; /* Adiciona espaço acima do aviso */
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+
 
 footer {
     background-color: #000;
