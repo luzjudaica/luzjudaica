@@ -2,11 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #000;
-    background-image: url('Estrela\ de\ David\ 16-9.png');
-    background-size: cover; /* Redimensiona a imagem para cobrir todo o fundo */
-    background-position: center; /* Centraliza a imagem no fundo */
-    background-repeat: no-repeat;
+    background-color: #336699;
    
 }
 
@@ -14,57 +10,146 @@ body {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    background-color: transparent;
+    background-color: #f8f8f8;
     border-radius: 10px;
     text-align: center;
     min-height: 100vh; /* Define a altura mínima da área de conteúdo para ocupar toda a altura da tela */
     display: flex;
     flex-direction: column;
+    
 }
 
 .title {
-    font-family: 'David Libre', sans-serif; /* Aplica a fonte David Libre */
-    font-size: 36px; /* Tamanho da fonte ajustado */
+    font-family: 'Arial', sans-serif; /* Usando a fonte Arial como exemplo */
+    font-size: 24px; /* Tamanho da fonte ajustado */
     margin-bottom: 20px;
-    color: #fff; /* Cor dourada */
-    text-shadow: -1px -1px 0 #000,  
-                 1px -1px 0 #000,
-                -1px 1px 0 #000,
-                 1px 1px 0 #000; /* Adiciona um contorno dourado ao redor das letras */
+    color: #333; /* Cor do texto */
+    text-shadow: none; /* Removendo o efeito de sombra no texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
 }
 
 
-.links {
+
+
+
+
+.products {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    
 }
 
-.links a {
-    display: block;
-    font-weight: bold;
+.product {
+    flex-basis: 30%;
+    margin-bottom: 20px;
+   
+}
+
+.product img {
     width: 100%;
-    padding: 15px;
-    margin-bottom: 10px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
     border-radius: 5px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adicionamos a propriedade box-shadow na transição */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-.links a:hover {
-    transform: scale(1.05); /* Aumenta o tamanho do link em 5% */
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+.product img:hover {
+    transform: scale(1.01);
 }
+
+.rabinosproducts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    
+}
+
+.ravproduct {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    
+}
+
+.ravproduct img {
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.ravproduct img:hover {
+    transform: scale(1.01);
+}
+
+button {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    fill: #ffffff;
+    color: #ffffff;
+    background-color: #61CE7000;
+    border-style: none;
+    border-radius: 15px 15px 15px 15px;
+    padding: 20px 40px 20px 40px;
+    background-color: linear-gradient(112deg, #03D331 0%, #00BB29 100%);
+    background-image: linear-gradient(112deg, rgb(3, 211, 49) 0%, rgb(0, 187, 41) 100%);
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    box-shadow: 0px 15px 61px 0px #03D331;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-bottom: 70px;
+
+}
+button:hover {
+    transform: scale(1.05);
+
+}
+
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.slides {
+    display: flex; /* Para fazer as imagens ficarem lado a lado */
+}
+
+.slide {
+    flex: 0 0 auto; /* Evita que as imagens sejam redimensionadas */
+    width: 100%; /* Define a largura máxima de cada slide */
+    height: auto; /* Altura automática para manter a proporção */
+}
+
+.slide img {
+    width: 100%; /* Para garantir que as imagens ocupem todo o espaço disponível */
+    height: auto; /* Altura automática para manter a proporção */
+    object-fit: cover;
+}
+
+
 
 footer {
     background-color: #000;
     color: #fff;
     text-align: center;
     padding: 20px;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
