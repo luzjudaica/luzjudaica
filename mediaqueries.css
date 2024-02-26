@@ -1,0 +1,93 @@
+/* Tablets em modo retrato e dispositivos móveis */
+@media only screen and (max-width: 768px) {
+    .container {
+        margin: 20px auto;
+        padding: 10px;
+    }
+    
+    .title {
+        font-size: 20px;
+        margin-bottom: 15px;
+        padding: 5px 10px;
+    }
+    
+    .products, .rabinosproducts {
+        justify-content: space-around;
+    }
+    
+    .product, .ravproduct {
+        flex-basis: 45%;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 15px 30px;
+        margin-bottom: 40px;
+    }
+
+    .description {
+        text-decoration: none;
+    }
+}
+
+/* Tablets em modo paisagem e dispositivos móveis */
+@media only screen and (max-width: 1024px) {
+    .container {
+        margin: 20px auto;
+        padding: 10px;
+    }
+    
+    .title {
+        font-size: 20px;
+        margin-bottom: 15px;
+        padding: 5px 10px;
+    }
+    
+    .products, .rabinosproducts {
+        justify-content: space-around;
+    }
+    
+    .product, .ravproduct {
+        flex-basis: 45%;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 15px 30px;
+        margin-bottom: 40px;
+    }
+    .description {
+        text-decoration: none;
+    }
+}
+
+/* Dispositivos móveis em modo paisagem e outros dispositivos com resoluções menores */
+@media only screen and (max-width: 480px) {
+    .container {
+        margin: 10px auto;
+        padding: 5px;
+    }
+    
+    .title {
+        font-size: 18px;
+        margin-bottom: 10px;
+        padding: 3px 5px;
+    }
+    
+    .products, .rabinosproducts {
+        justify-content: center;
+    }
+    
+    .product, .ravproduct {
+        flex-basis: 90%;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px 24px;
+        margin-bottom: 30px;
+    }
+    .description {
+        text-decoration: none;
+    }
+}
