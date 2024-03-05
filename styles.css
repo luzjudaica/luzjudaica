@@ -14,6 +14,11 @@ body {
     margin: 20px 0px;
 }
 
+.youtube iframe {
+    width: 560px;
+    height: 315px;
+}
+
 .youtube-title {
     display: flex;
     justify-content: center;
